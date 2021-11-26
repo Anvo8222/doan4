@@ -1,0 +1,282 @@
+﻿
+
+.signupMem {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.form {
+    background: #FBFCFC;
+    margin: auto;
+    width: 585px;
+    height: 610px;
+    box-shadow: -2px -2px 18px -2px #000;
+    border-right: 5px solid var(--text-color);
+    border-bottom: 6px solid var(--text-color);
+}
+
+.form-message-one {
+    display: flex;
+    background-color: aqua;
+    /* padding-bottom: 10%; */
+    /* margin-right: 10%; */
+}
+
+.form-message-two {
+    display: flex;
+    /* margin: 10px 32px 6px 125px; */
+    position: absolute;
+    top: 39.9%;
+}
+
+.form-message-three {
+    display: flex;
+    /* margin: 10px 32px 6px 125px; */
+    position: absolute;
+    top: 49.9%;
+}
+
+.form-message-four {
+    display: flex;
+    /* margin: 10px 32px 6px 125px; */
+    position: absolute;
+    top: 60.2%;
+}
+
+.form-message-five {
+    display: flex;
+    /* margin: 10px 32px 6px 125px; */
+    position: absolute;
+    top: 70.6%;
+}
+
+.form-signupMem {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.signupMem__header {
+    width: 100%;
+}
+
+.signupMem__header-logo {
+    text-align: center;
+    width: 44px;
+    height: 40px;
+    font-size: 1.4rem;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.signupMem__header-name {
+    margin: 30px;
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    font-weight: 600;
+    user-select: none;
+}
+
+.signupMem__center-input {
+    position: relative;
+    display: flex;
+    padding-bottom: 30px;
+}
+
+.icon-email {
+    position: absolute;
+    top: 12.5%;
+    padding-left: 9px;
+}
+
+.icon-password {
+    position: absolute;
+    top: 12.5%;
+    padding-left: 9px;
+}
+
+.icon-password-2 {
+    position: absolute;
+    top: 12.5%;
+    padding-left: 9px;
+}
+
+.icon-phone {
+    position: absolute;
+    padding-left: 9px;
+    top: 12.5%;
+    font-size: 1.5rem;
+}
+
+.signupMem__footer {
+    text-align: center;
+}
+
+.signupMem__footer-login {
+    background: #5993EC;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    width: 400px;
+    font-size: 1.9rem;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    height: 40px;
+}
+
+    .signupMem__footer-login:hover {
+        color: rgba(255, 255, 255, 0.2);
+    }
+
+.signupMem__center-icon--user {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.signupMem__center-icon--email {
+    font-size: 1.4rem;
+}
+
+.signupMem__center-input-boxname {
+    min-width: 132px;
+}
+
+.signupMem__center-input--email-one {
+    padding: 0 0 0 6px;
+    min-height: 30px;
+    width: 90%;
+}
+
+.signupMem__center-input--email-two {
+    padding: 0 0 0 6px;
+    min-height: 30px;
+    width: 99%;
+}
+
+.signupMem__center-input--email {
+    padding-right: 0;
+    padding-left: 30px;
+    min-height: 30px;
+    min-width: 262px;
+}
+
+.signupMem__center-icon--password {
+    font-size: 1.4rem;
+}
+
+.signupMem__center-input--password {
+    min-height: 30px;
+    min-width: 262px;
+    padding-left: 30px;
+}
+
+.signupMem__center-input--phone {
+    min-width: 262px;
+    min-height: 30px;
+    padding-left: 30px;
+}
+
+.signupMem__header-qmk:hover {
+    color: rgb(0 156 251);
+}
+
+.signupMem__footer-link:hover {
+    color: rgb(0 156 251);
+}
+/* cùng 1 hàng */
+.signupMem__footer-footer {
+    /* cách ra 2 bên */
+    /* justify-content: space-evenly; */
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: nowrap;
+   align-content: flex-end;
+   flex-direction: row; */
+}
+
+.signupMem__footer-question {
+    font-size: 1.9rem;
+    color: #8E8E8E;
+    user-select: none;
+    margin-right: 2%;
+}
+
+.signupMem__footer-link {
+    font-size: 1.9rem;
+    color: #195fc5e0;
+    font-weight: bold;
+    line-height: 50px;
+    text-decoration: none;
+    user-select: none;
+}
+
+.signupMem__footer-box {
+    box-shadow: 0px -1px 0px 0px #000;
+}
+
+    .signupMem__footer-box p {
+        font-size: 1.4rem;
+        font-weight: 700;
+        user-select: none;
+    }
+
+    .signupMem__footer-box a {
+        color: #1180df;
+        text-decoration: none
+    }
+
+        .signupMem__footer-box a:hover {
+            cursor: pointer;
+            color: rgba(62 135 177 / 50%);
+        }
+
+/* signupMem__center_right ( Công Ty ) */
+.signupMem__center_right {
+    min-width: 214px;
+}
+
+.signupMem__center-input--email-three {
+    min-height: 30px;
+    min-width: 234px;
+    padding-left: 9px;
+}
+
+.icon-address {
+    position: absolute;
+    padding-left: 9px;
+    font-size: 1.5rem;
+    top: 12.5%;
+}
+
+.signupMem__center-input--address {
+    min-height: 30px;
+    min-width: 234px;
+    padding-left: 24px;
+}
+
+.signupMem__center-input p {
+    font-size: 1.6rem;
+    margin: 0 0 12px 0;
+}
+
+.checkbox-one {
+    font-size: 1.4rem;
+    margin-right: 11%;
+    margin-left: 1%;
+    color: #8E8E8E;
+}
+
+.checkbox-two {
+    font-size: 1.4rem;
+    margin-left: 1%;
+    color: #8E8E8E;
+}
+
+.search__select-location {
+    font-size: 1.5rem;
+    width: 100%;
+}

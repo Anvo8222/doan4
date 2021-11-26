@@ -1,0 +1,171 @@
+﻿
+.h1 {
+    font-size: 2rem;
+    margin: 1.6em 0;
+}
+
+.login__header-qmk {
+    text-align: end;
+}
+
+.header_left {
+    display: flex;
+}
+
+.header_name {
+    color: #1180df;
+    padding-top: 20px;
+}
+
+/* Form Login */
+.login {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* display: flex;
+    height: 100%;
+    width: 100%;
+    
+    position: relative; */
+}
+
+.form {
+    width: 500px;
+    height: 400px;
+    display: block;
+    margin: auto;
+    background: #FBFCFC;
+    /* position:absolute;
+    /* width: 500px;
+    height: 400px;
+    margin: 17% 36%; */
+    box-shadow: -2px -2px 18px -2px #000;
+    border-right: 5px solid var(--primary-color);
+    border-bottom: 6px solid var(--primary-color);
+}
+
+.form-login {
+    margin: 20px;
+}
+
+.login__header-logo {
+    text-align: center;
+    width: 44px;
+    height: 40px;
+    font-size: 1.4rem;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.login__header-name {
+    margin: 20px;
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.login__center-input {
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.icon-email {
+    position: absolute;
+    top: 12.4%;
+    padding-left: 9px;
+}
+
+.icon-password {
+    position: absolute;
+    top: 12.5%;
+    padding-left: 9px;
+}
+
+.login__footer {
+    text-align: center;
+}
+
+.login__footer-login {
+    /* margin-left: 111px; */
+    background: #5993EC;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    /* width: 200px; */
+    /* width: 445px; */
+    width: 456px;
+    font-size: 1.9rem;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    height: 40px;
+}
+
+    .login__footer-login:hover {
+        color: rgba(255, 255, 255, 0.2);
+    }
+
+.login__center-icon--email {
+    font-size: 1.4rem;
+}
+
+.login__center-input--email {
+    padding-right: 0;
+    padding-left: 30px;
+    min-height: 30px;
+    min-width: 455px;
+}
+
+.login__center-icon--password {
+    font-size: 1.4rem;
+}
+
+.login__center-input--password {
+    min-height: 30px;
+    min-width: 455px;
+    padding-left: 30px;
+}
+
+.login__header-qmk {
+    cursor: pointer;
+    margin-right: 40px;
+    line-height: 40px;
+    /* color: #5D9BF8; */
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin: 11px 0 10px 310px;
+}
+
+    .login__header-qmk:hover {
+        color: rgb(0 156 251);
+    }
+
+.login__footer-link:hover {
+    color: rgb(0 156 251);
+}
+/* cùng 1 hàng */
+.login__footer-footer {
+    display: flex;
+    /* cách ra 2 bên */
+    /* justify-content: space-between;
+    display: flex; */
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-content: flex-end;
+    flex-direction: row;
+}
+
+.login__footer-question {
+    font-size: 1.9rem;
+    color: #8E8E8E;
+}
+
+.login__footer-link {
+    font-size: 1.9rem;
+    color: #6c7178;
+    font-weight: bold;
+    line-height: 50px;
+}

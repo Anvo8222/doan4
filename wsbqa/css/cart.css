@@ -1,0 +1,13 @@
+﻿.gruop-button{
+    display:flex;
+}
+.button {
+    margin: 12px 0;
+    width: 40%;
+    height: 30px;
+    color: yellow;
+    text-align: center;
+    background-color: #396cca;
+    font-size: 1.4rem;
+    display: block;
+}

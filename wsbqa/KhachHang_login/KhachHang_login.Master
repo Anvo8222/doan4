@@ -1,0 +1,208 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="KhachHang_login.master.cs" Inherits="wsbqa.KhachHang_login.KhachHang_login" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="../css/base.css" rel="stylesheet" />
+    <link href="../css/Style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+    <style>
+        #content {
+            width: 100%;
+        }
+        .header__right-link{
+            padding:0 2px;
+        }
+    </style>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="wrapper">
+      <!-- Sidebar -->
+      <nav id="sidebar" style="max-height:700px ;">
+        <div class="sidebar-header">
+          <h3>FashionShops</h3>
+        </div>
+
+        <ul class="list-unstyled components">
+          <p>Dummy Heading</p>
+          <li>
+            <a class="header__right-link-sidebar" href="#">Trang chủ</a>
+          </li>
+          <li class="active">
+            <a class="header__right-link-sidebar" href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"
+              class="dropdown-toggle">Quản lý đơn hàng <i class="fas fa-chevron-down"></i></a>
+
+            <ul class="collapse list-unstyled" id="homeSubmenu">
+              <li>
+                <a class="header__right-link-sidebar" href="#">Quần Tây</a>
+              </li>
+              <li>
+                <a class="header__right-link-sidebar" href="#">Quần Jean</a>
+              </li>
+              <li>
+                <a class="header__right-link-sidebar" href="#">Quần Short</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="header__right-link-sidebar" href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"
+              class="dropdown-toggle">Áo Nam<i class="fas fa-chevron-down"></i></a>
+            <ul class="collapse list-unstyled" id="pageSubmenu">
+              <li>
+                <a class="header__right-link-sidebar" href="#">Áo Khoác Nam</a>
+              </li>
+              <li>
+                <a class="header__right-link-sidebar" href="#">Áo Sơ Mi Nam</a>
+              </li>
+              <li>
+                <a class="header__right-link-sidebar" href="#">Áo Hoodie Nam</a>
+              </li>
+              <li>
+                <a class="header__right-link-sidebar" href="#">Áo Thun Nam</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="header__right-link-sidebar" href="#quannu" data-toggle="collapse" aria-expanded="false"
+              class="dropdown-toggle">Quần Nữ<i class="fas fa-chevron-down"></i></a>
+            <ul class="collapse list-unstyled" id="quannu">
+              <li>
+                <a class="header__right-link-sidebar" href="#">Quần Tây</a>
+              </li>
+              <li>
+                <a class="header__right-link-sidebar" href="#">Quần Jean</a>
+              </li>
+              <li>
+                <a class="header__right-link-sidebar" href="#">Quần Short</a>
+              </li>
+
+            </ul>
+          </li>
+          <li>
+            <a class="header__right-link-sidebar" href="#aonu" data-toggle="collapse" aria-expanded="false"
+              class="dropdown-toggle">Áo Nữ<i class="fas fa-chevron-down"></i></a>
+            <ul class="collapse list-unstyled" id="aonu">
+              <li>
+                <a class="header__right-link-sidebar" href="#">Áo Khoác Nữ</a>
+              </li>
+              <li>
+                <a class="header__right-link-sidebar" href="#">Áo Sơ Mi Nữ</a>
+              </li>
+              <li>
+                <a class="header__right-link-sidebar" href="#">Áo Hoodie Nữ</a>
+              </li>
+              <li>
+                <a class="header__right-link-sidebar" href="#">Áo Thun Nữ</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="header__right-link-sidebar" href="#vaydam" data-toggle="collapse" aria-expanded="false"
+              class="dropdown-toggle">Váy đầm<i class="fas fa-chevron-down"></i></a>
+            <ul class="collapse list-unstyled" id="vaydam">
+              <li>
+                <a class="header__right-link-sidebar" href="#">Váy Ngắn</a>
+              </li>
+              <li>
+                <a class="header__right-link-sidebar" href="#">Váy Đầm</a>
+              </li>
+
+            </ul>
+          </li>
+          <li>
+            <a class="header__right-link-sidebar" data-toggle="collapse" aria-expanded="false"
+              class="dropdown-toggle">Khác</a>
+
+          </li>
+          <li>
+            <a class="header__right-link-sidebar" href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false"
+              class="dropdown-toggle">Tin tức/ Blogs</a>
+
+          </li>
+        </ul>
+      </nav>
+      <div class="content">
+        <div id="content">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+  
+              <button type="button" id="sidebarCollapse" class="btn btn-info">
+                <i class="fas fa-align-left"></i>
+              </button>
+            </div>
+          </nav>
+        </div>
+              
+          
+              <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+          </div>
+            
+    </div>
+        <footer class="bg-dark text-center text-white">
+      <div class="container p-4 pb-0">
+        <section class="mb-4">
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+      </div>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <span>
+          <i class="fab fa-facebook"></i>
+          <a href="https://www.facebook.com/thaian02012k/">Võ Nguyễn Thái An</a>
+          <a href="https://www.facebook.com/tanthanhdev">Phan Tấn Thành</a>
+          <a href="https://www.facebook.com/hiep.vovan.921">Võ Văn Hiệp</a>
+          <a href="https://www.facebook.com/tranhoang.minhhung">Trần Hoàng Minh Hưng</a>
+          <a href="https://www.facebook.com/TriNguyenHorizon">Nguyễn Minh Trí</a>
+        </span>
+      </div>
+    </footer>
+            <script>
+                $(document).ready(function () {
+
+                    $('#sidebarCollapse').on('click', function () {
+                        $('#sidebar').toggleClass('active');
+                    });
+
+                });
+            </script>
+
+
+
+
+
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,58 @@
+﻿.chitietanh {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.name {
+    font-size: 3rem;
+}
+
+.mota {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin: 10px 0;
+    color: #000;
+}
+
+.mota__mahang {
+    font-weight: bold;
+}
+
+.dongia {
+    color: var(--text-color);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.mota_dongia {
+    border-top: 1px solid #ccc;
+}
+
+.button {
+    margin-top: 20px;
+    display:flex;
+}
+
+.button__muangay, .button__themvaogio {
+    width: 150px;
+    height: 30px;
+    padding-top: 4px;
+    text-align: center;
+    display:block;
+    font-size: 1.4rem;
+    border: none;
+    color: var(--text-white-color);
+    background-color: var(--primary-color);
+}
+
+    .button__muangay:hover, .button__themvaogio:hover {
+        background-color: rgb(243, 85, 85);
+    }
+
+.row-2 {
+    margin: 30px 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+}
