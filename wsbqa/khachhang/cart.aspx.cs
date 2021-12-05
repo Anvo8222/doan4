@@ -18,12 +18,13 @@ namespace wsbqa.khachhang
                 DataTable cart = new DataTable();
                 if (Session["cart"] == null)
                 {
-                    //Nếu chưa có giỏ hàng, tạo giỏ hàng thông qua DataTable với 4 cột chính
-                    //ID(Mã sản phẩm), Name(Tên sản phẩm)
-                    // Quantity(Số lượng)
+                    //Nếu chưa có giỏ hàng, tạo giỏ hàng thông qua DataTable
+                    
                     cart.Columns.Add("ID");
+                    cart.Columns.Add("IDnhacungcap");
                     cart.Columns.Add("HINHANH");
                     cart.Columns.Add("Name");
+                    cart.Columns.Add("tonkho");
                     cart.Columns.Add("Dongia");
                     cart.Columns.Add("Quantity");
                     cart.Columns.Add("Thanhtien");
@@ -50,10 +51,8 @@ namespace wsbqa.khachhang
                         string name = Request.QueryString["ten"];
                         string hinhanh = Request.QueryString["hinhanh1"];
                         int tonkho = Int32.Parse(Request.QueryString["tonkho"]) ;
+                        int idnhacungcap = Int32.Parse(Request.QueryString["iduser"]);
                         Double dongia = Double.Parse(Request.QueryString["dongia"]);
-                        //String anh = Request.QueryString["anh"];
-                        //int soluong = 0;
-                        //if (int.TryParse(Request.QueryString["number"], out soluong)) ;
                         int soluong = Int32.Parse(Request.QueryString["soluong"]); 
                         double thanhtien = soluong * dongia;
                         //Kiểm tra xem đã có sản phẩm trong giỏ hàng chưa ?
@@ -79,8 +78,10 @@ namespace wsbqa.khachhang
                         {
                             DataRow dr = cart.NewRow();
                             dr["ID"] = id;
+                            dr["IDnhacungcap"] = idnhacungcap;
                             dr["Name"] = name;
                             dr["Dongia"] = dongia;
+                            dr["tonkho"] = tonkho;
                             dr["Quantity"] = soluong;
                             dr["HINHANH"] = hinhanh;
                             dr["Thanhtien"] = dongia * soluong;
@@ -122,24 +123,33 @@ namespace wsbqa.khachhang
             {
                 DataTable cart = Session["cart"] as DataTable;
                 string quantity = e.NewValues["Quantity"].ToString();
+                string tonkho = e.NewValues["tonkho"].ToString();
                 string id = e.NewValues["ID"].ToString();
                 foreach (DataRow dr in cart.Rows)
                 {
                     //Kiểm tra mã sản phẩm phù hợp để gán số lượng khách hàng mua
                     if (dr["ID"].ToString() == id)
                     {
-                        dr["Quantity"] = int.Parse(quantity.ToString());
+                        if (int.Parse(quantity.ToString())< int.Parse(tonkho.ToString()))
+                        {
+                            dr["Quantity"] = int.Parse(quantity.ToString());
 
-                        dr["Thanhtien"] = int.Parse(dr["Quantity"].ToString()) * double.Parse(dr["dongia"].ToString());
+                            dr["Thanhtien"] = int.Parse(dr["Quantity"].ToString()) * double.Parse(dr["dongia"].ToString());
+                            //Lưu lại vào Session
+                            Session["cart"] = cart;
+                            //Hiển thị giỏ hàng với thông tin mới
+                            GridView1.DataSource = cart;
+                            GridView1.DataBind();
+                            Response.Redirect("cart.aspx");
+                        }
+                        else
+                        {
+                            Response.Write("<script>alert('Số lượng phải lớn hơn 0 và phải nhỏ hơn');</script>");
+                        }
                         break;
                     }
                 }
-                //Lưu lại vào Session
-                Session["cart"] = cart;
-                //Hiển thị giỏ hàng với thông tin mới
-                GridView1.DataSource = cart;
-                GridView1.DataBind();
-                Response.Redirect("cart.aspx");
+                
             }
             catch
             {

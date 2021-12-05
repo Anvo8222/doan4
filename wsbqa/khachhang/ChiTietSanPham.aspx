@@ -1,6 +1,31 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/khachhang/Home.Master" AutoEventWireup="true" CodeBehind="ChiTietSanPham.aspx.cs" Inherits="wsbqa.khachhang.ChiTietSanPham" %>
-
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style>
+        .img{
+            float:left;
+
+        }
+        .thongtin{
+            float:left;
+        }
+        .starempty{
+            background-image:url(../icon/starempty.png);
+            width:50px;
+            height:50px;
+        }
+        .starfilled{
+            background-image:url(../icon/starfilled.png);
+            width:50px;
+            height:50px;
+        }
+        .starwaiting{
+            background-image:url(../icon/starwaiting.png);
+            width:50px;
+            height:50px;
+        }
+       
+        
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <asp:ScriptManager ID="ScriptManager1" runat="server">
@@ -15,7 +40,7 @@
                         <img class="chitietanh" src='<%# "../img/"+Eval("HINHANH1") %>' alt="Chitiet">
                     </div>
                     <div class="col-xl-7">
-                        <h1 class="name">Áo khoác len cardigan nữ màu trơn</h1>
+                        <h1 class="name"><%# Eval("TENSANPHAM") %></h1>
                         <div class="mota">
                             <span class="mota__ma">Người bán: </span>
                             <span class="mota__mahang"><%# Eval("HOTEN") %></span>
@@ -39,9 +64,10 @@
         </asp:Repeater>
                         <div class="mota">
 
-                            <asp:TextBox ID="txtsl" PlaceHolder="Số" value="0" min="1" type="number" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txtsl" PlaceHolder="Số" value="1" min="1" type="number" runat="server"></asp:TextBox>
 
                         </div>
+                    
                         <div class="button">
                             <asp:Repeater ID="Repeater2" runat="server">
             <ItemTemplate>

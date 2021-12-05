@@ -110,12 +110,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="admin\QuanLyTaiKhoan.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="css\admin.css" />
     <Content Include="css\base.css" />
     <Content Include="css\BootStrap.css" />
     <Content Include="css\cart.css" />
@@ -124,6 +126,7 @@
     <Content Include="css\DangKyNguoiBanHang.css" />
     <Content Include="css\fontawasome.css" />
     <Content Include="css\Login.css" />
+    <Content Include="css\nhacungcap.css" />
     <Content Include="css\Style.css" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
@@ -142,6 +145,9 @@
     <Content Include="khachhang\ChiTietSanPham.aspx" />
     <Content Include="khachhang\Home.Master" />
     <Content Include="KhachHang_login\KhachHang_login.Master" />
+    <Content Include="admin\admin.Master" />
+    <Content Include="nhacungcap\NhaCungCap.aspx" />
+    <Content Include="nhacungcap\nhacungcap.Master" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="khachhang\index.aspx" />
     <Content Include="khachhang\login.aspx" />
@@ -154,6 +160,7 @@
     <Content Include="khachhang\XacNhanMatKhauMem.aspx" />
     <Content Include="khachhang\XacNhanQuenMK.aspx" />
     <Content Include="KhachHang_login\TrangCaNhan.aspx" />
+    <Content Include="nhacungcap\XemSP.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -189,6 +196,20 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admin\admin.Master.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\admin.Master.designer.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin\QuanLyTaiKhoan.aspx.cs">
+      <DependentUpon>QuanLyTaiKhoan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\QuanLyTaiKhoan.aspx.designer.cs">
+      <DependentUpon>QuanLyTaiKhoan.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -322,6 +343,27 @@
       <DependentUpon>TrangCaNhan.aspx</DependentUpon>
     </Compile>
     <Compile Include="MD5.cs" />
+    <Compile Include="nhacungcap\NhaCungCap.aspx.cs">
+      <DependentUpon>NhaCungCap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nhacungcap\NhaCungCap.aspx.designer.cs">
+      <DependentUpon>NhaCungCap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="nhacungcap\nhacungcap.Master.cs">
+      <DependentUpon>nhacungcap.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nhacungcap\nhacungcap.Master.designer.cs">
+      <DependentUpon>nhacungcap.Master</DependentUpon>
+    </Compile>
+    <Compile Include="nhacungcap\XemSP.aspx.cs">
+      <DependentUpon>XemSP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nhacungcap\XemSP.aspx.designer.cs">
+      <DependentUpon>XemSP.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>

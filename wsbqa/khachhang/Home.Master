@@ -59,10 +59,10 @@
                     <asp:LinkButton ID="LinkButton2" runat="server" class="header__right-link" OnClick="LinkButton2_Click">Đăng xuất</asp:LinkButton>
                 </asp:PlaceHolder>
               <asp:PlaceHolder ID="PHDAdmin" runat="server" Visible="false">
-                   <a href="#" class="header__right-link">Trang Admin</a>
+                   <a href="../admin/QuanLyTaiKhoan.aspx" class="header__right-link">Trang Admin</a>
                </asp:PlaceHolder>
-            <a href="#" class="header__right-link">Giỏ hàng<i class="fas fa-cart-plus"></i></a>
-              <a href="#" class="header__right-link">Đăng bán</a>
+            <a href="./cart.aspx" class="header__right-link">Giỏ hàng<i class="fas fa-cart-plus"></i></a>
+              <a href="../nhacungcap/XemSP.aspx" class="header__right-link">Đăng bán</a>
           </div>
         </div>
       </header>

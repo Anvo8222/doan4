@@ -15,7 +15,12 @@
         <Columns>
             <asp:TemplateField HeaderText="ID SP">
                 <ItemTemplate>
-                    <asp:Label scope="row" ID="Label12" runat="server" Text='<%# Bind("ID") %>'></asp:Label>
+                    <asp:Label scope="row" ID="id" runat="server" Text='<%# Bind("ID") %>'></asp:Label>
+                </ItemTemplate>
+            </asp:TemplateField>
+            <asp:TemplateField HeaderText="Nhà Cung Cấp">
+                <ItemTemplate>
+                    <asp:Label scope="row" ID="Label12" runat="server" Text='<%# Bind("IDnhacungcap") %>'></asp:Label>
                 </ItemTemplate>
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Ảnh">
@@ -28,7 +33,7 @@
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Tên sp">
                 <ItemTemplate>
-                    <asp:Label scope="row" ID="Label3" runat="server" Text='<%# Bind("Name") %>'></asp:Label>
+                    <asp:Label scope="row" ID="ten" runat="server" Text='<%# Bind("Name") %>'></asp:Label>
                 </ItemTemplate>
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Đơn giá">
@@ -36,9 +41,15 @@
                     <asp:Label ID="Label5" runat="server" Text='<%# Bind("Dongia","{0:n0}") %>'></asp:Label>
                 </ItemTemplate>
             </asp:TemplateField>
+            <asp:TemplateField HeaderText="ton kho">
+                <ItemTemplate>
+                    <asp:Label scope="row" ID="Label3" runat="server" Text='<%# Bind("tonkho") %>'></asp:Label>
+                </ItemTemplate>
+            </asp:TemplateField>
             <asp:TemplateField HeaderText="Số lượng">
+
                 <EditItemTemplate>
-                    <asp:TextBox scope="row" ID="txtQuantity" runat="server" Height="19px" Text='<%# Bind("Quantity") %>' Width="51px"></asp:TextBox>
+                    <asp:TextBox scope="row" ID="txtQuantity" type="number" min="1" runat="server" Height="19px" Text='<%# Bind("Quantity") %>' Width="51px"></asp:TextBox>
                 </EditItemTemplate>
                 <ItemTemplate>
                     <asp:Label ID="Label1" runat="server" Text='<%# Bind("Quantity") %>'></asp:Label>
