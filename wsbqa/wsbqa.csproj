@@ -111,6 +111,9 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="admin\QuanLyTaiKhoan.aspx" />
+    <Content Include="admin\QuanLyThongTinCaNhan.aspx" />
+    <Content Include="admin\QuanLyTinTuc.aspx" />
+    <Content Include="admin\ThongKe.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -209,6 +212,27 @@
     </Compile>
     <Compile Include="admin\QuanLyTaiKhoan.aspx.designer.cs">
       <DependentUpon>QuanLyTaiKhoan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\QuanLyThongTinCaNhan.aspx.cs">
+      <DependentUpon>QuanLyThongTinCaNhan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\QuanLyThongTinCaNhan.aspx.designer.cs">
+      <DependentUpon>QuanLyThongTinCaNhan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\QuanLyTinTuc.aspx.cs">
+      <DependentUpon>QuanLyTinTuc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\QuanLyTinTuc.aspx.designer.cs">
+      <DependentUpon>QuanLyTinTuc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ThongKe.aspx.cs">
+      <DependentUpon>ThongKe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\ThongKe.aspx.designer.cs">
+      <DependentUpon>ThongKe.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">

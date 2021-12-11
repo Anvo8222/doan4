@@ -14,7 +14,6 @@
 
 </head>
 <body>
-    <form id="form1" runat="server">
         <nav class="navbar navbar-expand-lg navbar-light  bg-secondary">
         <a class="navbar-brand text-white" href="#">HOME</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -97,7 +96,6 @@
             </asp:ContentPlaceHolder>
         </div>
     </div>
-    </form>
      <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -109,5 +107,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <asp:ContentPlaceHolder ID="js_footer" runat="server">
+            </asp:ContentPlaceHolder>
 </body>
 </html>
