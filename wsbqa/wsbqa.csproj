@@ -146,6 +146,7 @@
     <Content Include="JavaScript\JavaScript.js" />
     <Content Include="khachhang\cart.aspx" />
     <Content Include="khachhang\ChiTietSanPham.aspx" />
+    <Content Include="khachhang\dathang.aspx" />
     <Content Include="khachhang\Home.Master" />
     <Content Include="KhachHang_login\KhachHang_login.Master" />
     <Content Include="admin\admin.Master" />
@@ -274,6 +275,13 @@
     </Compile>
     <Compile Include="khachhang\ChiTietSanPham.aspx.designer.cs">
       <DependentUpon>ChiTietSanPham.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="khachhang\dathang.aspx.cs">
+      <DependentUpon>dathang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="khachhang\dathang.aspx.designer.cs">
+      <DependentUpon>dathang.aspx</DependentUpon>
     </Compile>
     <Compile Include="khachhang\Home.Master.cs">
       <DependentUpon>Home.Master</DependentUpon>

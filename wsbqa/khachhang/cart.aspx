@@ -5,7 +5,24 @@
         .view{
             width:100%;
         }
-        
+        #tongtien{
+            color: tomato;
+            float: right;
+            margin-right: 200px;
+            font-size: 20px;
+        }
+        #dathang{
+                float: right;
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                margin-right: 300px;
+                font-size: 20px;
+                color: blue;
+        }
+        .btndathang:hover{
+            opacity:0.4;
+        }
     </style>
     <link href="../css/cart.css" rel="stylesheet" />
 </asp:Content>
@@ -20,9 +37,12 @@
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Nhà Cung Cấp">
                 <ItemTemplate>
-                    <asp:Label scope="row" ID="Label12" runat="server" Text='<%# Bind("IDnhacungcap") %>'></asp:Label>
+                    <asp:Label scope="row" ID="Label12" runat="server" Text='<%# Bind("IDnhacungcap") %>'>
+                        
+                    </asp:Label>
                 </ItemTemplate>
             </asp:TemplateField>
+            
             <asp:TemplateField HeaderText="Ảnh">
                 <EditItemTemplate>
                     
@@ -47,7 +67,6 @@
                 </ItemTemplate>
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Số lượng">
-
                 <EditItemTemplate>
                     <asp:TextBox scope="row" ID="txtQuantity" type="number" min="1" runat="server" Height="19px" Text='<%# Bind("Quantity") %>' Width="51px"></asp:TextBox>
                 </EditItemTemplate>
@@ -63,16 +82,18 @@
             <asp:CommandField ButtonType="Button" ControlStyle-CssClass="button" HeaderText="Chức năng" ShowDeleteButton="True" ShowEditButton="True">
                 <ControlStyle  />
             </asp:CommandField>
-
         </Columns>
-      
     </asp:GridView>
-    <div id="tongtien">
+    <div class="cart__footer">
+     <div id="tongtien">
         <asp:Label ID="Label2" runat="server" Text="TỔNG TIỀN:"></asp:Label>
         <asp:Literal ID="Literal1" runat="server"></asp:Literal>
     </div>
     <div id="dathang">
-        <asp:LinkButton ID="LinkButton3" runat="server" >Đặt Hàng! </asp:LinkButton>
+        <asp:PlaceHolder ID="phd_dathang" runat="server" Visible="true">
+             <asp:LinkButton CssClass="btndathang" ID="LinkButton3" runat="server" OnClick="LinkButton3_Click" >Đặt Hàng! </asp:LinkButton>
+        </asp:PlaceHolder>
+       
     </div>
-
+    </div>
 </asp:Content>

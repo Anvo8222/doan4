@@ -25,6 +25,7 @@ namespace wsbqa.khachhang
             if (kq > 0)
             {
                 Response.Write("<script>alert('Cập nhật Thành công!');</script>");
+                Response.Redirect("login.aspx");
             }
             else
             {
