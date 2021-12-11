@@ -24,10 +24,13 @@ namespace wsbqa.khachhang
                     cart.Columns.Add("IDnhacungcap");
                     cart.Columns.Add("HINHANH");
                     cart.Columns.Add("Name");
+                
                     cart.Columns.Add("tonkho");
                     cart.Columns.Add("Dongia");
                     cart.Columns.Add("Quantity");
                     cart.Columns.Add("Thanhtien");
+                    Label2.Text = "Chưa có sản phẩm nào trong giỏ hàng";
+                    phd_dathang.Visible = false;
                     //Sau khi tạo xong thì lưu lại vào session
                     Session["cart"] = cart;
                 }
@@ -49,6 +52,7 @@ namespace wsbqa.khachhang
                     {
                         string id = Request.QueryString["id"];
                         string name = Request.QueryString["ten"];
+               
                         string hinhanh = Request.QueryString["hinhanh1"];
                         int tonkho = Int32.Parse(Request.QueryString["tonkho"]) ;
                         int idnhacungcap = Int32.Parse(Request.QueryString["iduser"]);
@@ -80,6 +84,7 @@ namespace wsbqa.khachhang
                             dr["ID"] = id;
                             dr["IDnhacungcap"] = idnhacungcap;
                             dr["Name"] = name;
+                       
                             dr["Dongia"] = dongia;
                             dr["tonkho"] = tonkho;
                             dr["Quantity"] = soluong;
@@ -187,6 +192,12 @@ namespace wsbqa.khachhang
                 GridView1.DataBind();
                 Response.Redirect("cart.aspx");
             }
+        }
+
+        protected void LinkButton3_Click(object sender, EventArgs e)
+        {
+            //dat hang
+            Server.Transfer("dathang.aspx");
         }
     }
 }
