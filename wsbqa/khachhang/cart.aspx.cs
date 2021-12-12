@@ -194,7 +194,7 @@ namespace wsbqa.khachhang
             }
         }
 
-        protected void LinkButton3_Click(object sender, EventArgs e)
+        protected void btndathang_Click(object sender, EventArgs e)
         {
             //dat hang
             Server.Transfer("dathang.aspx");

@@ -51,6 +51,12 @@ namespace wsbqa.khachhang
             }
         }
 
+        // Generates a random number within a range.      
+        public int RandomNumber(int min, int max)
+        {
+            return _random.Next(min, max);
+        }
+
         protected void Button1_Click(object sender, EventArgs e)
         {
             DateTime ngaydathang = DateTime.Now;
@@ -64,23 +70,33 @@ namespace wsbqa.khachhang
             int kq;
             //txtPhiShip.Text = ngaydathang.ToString();
             //chay cart
-
+            //Trạng thái ( 1: chờ xác nhận, 2: đang giao , 3: đã giao)
             //đặt hàng   (chưa xong)
+            int num = RandomNumber(1, 100000);
+            string sql_donhang = "SET IDENTITY_INSERT DONHANG ON; INSERT INTO DONHANG (IDDONHANG, NGAYLAP, DIACHIKH,TRANGTHAI,SDT,HOTEN,IDUSER) values ("
+                + num + ", '" + ngaydathang + "', '" + diachi + "'," + 1 + ",'" + sodienthoai + "','" + hoten + "','" + iduser + "'); SET IDENTITY_INSERT DONHANG OFF;";
+            kq = kn.xuly(sql_donhang);
+            bool isSuccess = true;
             foreach (DataRow dtr in cart.Rows)
-            {
-                kq = kn.xuly("INSERT INTO DONHANG values ('" + ngaydathang + "', '" + diachi + "',N'Chờ xác nhận','" + sodienthoai + "','" + hoten + "','"+ iduser+"'");
+            {     
                 if (kq > 0)
                 {
-                    kn.xuly("insert into CHITIETDONHANG values ('" + int.Parse(dtr["Quantity"].ToString()) + "','"+ int.Parse(dtr["dongia"].ToString()));
-                    Response.Write("<script>alert('ĐẶT HÀNG THÀNH CÔNG');</script>");
+                    string tykm = "1/2"; //xem lai  
+                    kn.xuly("insert into CHITIETDONHANG values ('" + int.Parse(dtr["Quantity"].ToString()) + "','"+ int.Parse(dtr["dongia"].ToString())
+                        + "','" + tykm + "','" + int.Parse(dtr["ID"].ToString()) + "','" + num + "')");
                 }
                 else
                 {
                     Response.Write("<script>alert('ĐẶT HÀNG KHÔNG THÀNH CÔNG');</script>");
+                    isSuccess = false;
                 }
             }
-            Session["cart"] = null;
-            Server.Transfer("dathang.aspx");
+            if(isSuccess == true)
+            {
+                Response.Write("<script>alert('ĐẶT HÀNG THÀNH CÔNG');</script>");
+                Session["cart"] = null;
+                Response.Redirect("index.aspx");
+            }
         }
     }
 }

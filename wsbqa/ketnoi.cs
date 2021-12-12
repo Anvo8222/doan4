@@ -13,7 +13,7 @@ namespace wsbqa
         private void layknoi()
         {
             //khởi tạo giá trị cho đối tượng SqlConnection 
-            con = new SqlConnection(@"Data Source=NGUYEN_AN\SQLEXPRESS;Initial Catalog=CSDLDOAN4;Integrated Security=True");
+            con = new SqlConnection(@"Data Source=DESKTOP-TKHRFN3;Initial Catalog=CSDL_DOAN4;Integrated Security=True");
             con.Open();//mở kết nối
         }
         //xay dựng hàm đóng kết nối
@@ -60,6 +60,7 @@ namespace wsbqa
             }
             return kq;
         }
+
         public void layketnoi()
         {
             con = new SqlConnection(@"Data Source=NGUYEN_AN\SQLEXPRESS;Initial Catalog=CSDLDoAnCN;Integrated Security=True");

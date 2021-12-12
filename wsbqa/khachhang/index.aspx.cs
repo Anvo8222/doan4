@@ -19,7 +19,7 @@ namespace wsbqa.khachhang
         static int pagesizeBlog = 0;
         protected void Page_Load(object sender, EventArgs e)
         {
-            Session["con"] = @"Data Source=NGUYEN_AN\SQLEXPRESS;Initial Catalog=CSDLDOAN4;Integrated Security=True";
+            Session["con"] = @"Data Source=DESKTOP-TKHRFN3;Initial Catalog=CSDL_DOAN4;Integrated Security=True";
             if (!IsPostBack)
             {
                 bind();

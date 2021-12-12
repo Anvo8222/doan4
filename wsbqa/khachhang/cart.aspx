@@ -91,7 +91,7 @@
     </div>
     <div id="dathang">
         <asp:PlaceHolder ID="phd_dathang" runat="server" Visible="true">
-             <asp:LinkButton CssClass="btndathang" ID="LinkButton3" runat="server" OnClick="LinkButton3_Click" >Đặt Hàng! </asp:LinkButton>
+             <asp:LinkButton CssClass="btndathang" ID="LinkButton3" runat="server" OnClick="btndathang_Click">Đặt Hàng! </asp:LinkButton>
         </asp:PlaceHolder>
        
     </div>

@@ -74,9 +74,8 @@
             </div>
         </div>
         <asp:PlaceHolder ID="phd_dathang" runat="server" Visible="true">
-            
-    <asp:Button ID="Button1" type="submit" class="btn btn-primary" runat="server" Text="Đặt hàng" OnClick="Button1_Click" />
         </asp:PlaceHolder>
     </form>
+    <asp:Button ID="Button1" type="button" class="btn btn-primary" runat="server" Text="Đặt hàng" OnClick="Button1_Click" />
 
 </asp:Content>
