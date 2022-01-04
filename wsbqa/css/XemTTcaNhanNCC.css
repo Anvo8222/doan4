@@ -1,0 +1,154 @@
+﻿.profile {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.profile__header {
+    border: 1px solid #ccc;
+    height: 100px;
+    position: relative;
+    box-shadow: 1px 0px 10px 2px var(--primary-color);
+}
+
+.profile__header-img {
+    position: absolute;
+    left: -40px;
+    top: 12px;
+}
+
+.profile__header-content {
+    margin-left: 44px;
+    margin-top: 28px;
+}
+
+.profile__nav {
+    margin: 20px;
+}
+
+.profile__nav-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.profile__nav-item {
+    display: inline-block;
+    margin: 2px 10px;
+    padding: 8px 2px;
+}
+
+.profile__nav-item-link {
+    text-decoration: none;
+    display: block;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: var(--text-color);
+}
+/* hover */
+.profile__nav-item {
+    color: var(--text-color);
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    position: relative;
+}
+
+    .profile__nav-item:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: rgb(38, 0, 255);
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+
+    .profile__nav-item:hover:after {
+        width: 100%;
+        left: 0;
+    }
+
+/*  */
+.profile__content {
+    box-shadow: 1px 0px 10px 2px var(--primary-color);
+    border: 1px solid #ccc;
+}
+
+.profile__content-content {
+    min-height: 400px;
+    margin: 20px;
+}
+
+.profile__content-thontinlienlac {
+    font-size: 1.4rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.profile__content-name-name {
+    display: block;
+    padding: 4px 0;
+    font-size: 1.4rem;
+}
+
+.profile__content-email {
+    display: block;
+    padding: 4px 0;
+    font-size: 1.4rem;
+}
+
+.profile__content-sdt {
+    display: block;
+    padding: 4px 0;
+    font-size: 1.4rem;
+}
+
+.profile__content-footer {
+    margin-top: 20px;
+}
+
+.profile__content-mota {
+    margin: 20px 0;
+}
+
+.profile__content-mota-h {
+    font-size: 1.6rem;
+}
+
+.profile__content-mota-span {
+    font-size: 1.4rem;
+}
+
+.profile__content-nganhnghe {
+    margin: 20px 0;
+}
+
+.profile__content-nganhnghe-h {
+    font-size: 1.6rem;
+}
+
+.profile__content-nganhnghe-span {
+    font-size: 1.4rem;
+}
+
+.profile__content-mucluong {
+    margin: 20px 0;
+}
+
+.profile__content-mucluong-h {
+    font-size: 1.6rem;
+}
+
+.profile__content-mucluong-span {
+    font-size: 1.4rem;
+}
+
+.profile__content-btn {
+    width: 100%;
+    color: var(--text-white-color);
+    background-color: var(--primary-color);
+    font-size: 1.4rem;
+    border: none;
+    cursor: pointer;
+}

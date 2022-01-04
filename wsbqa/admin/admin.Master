@@ -14,8 +14,9 @@
 
 </head>
 <body>
+    <form id="form1" runat="server">
         <nav class="navbar navbar-expand-lg navbar-light  bg-secondary">
-        <a class="navbar-brand text-white" href="#">HOME</a>
+        <a class="navbar-brand text-white" href="../khachhang/index.aspx">HOME</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -52,23 +53,20 @@
                           <a href="#"><i class="fa fa-gift fa-lg"></i> Quản lý danh mục <span class="arrow"></span></a>
                         </li>
                         <ul class="sub-menu collapse" id="products">
-                            <li><a href="#">Xem danh mục chờ xác nhận</a></li>
-                            <li><a href="#">Thêm danh mục sản phẩm</a></li>
-                            <li><a href="#">Chỉnh sửa danh mục</a></li>
-                            <li><a href="#">Xóa danh mục</a></li>
+                            <li><a href="./XemYeuCauDanhMuc.aspx">Xem danh mục chờ xác nhận</a></li>
+                            <li><a href="./ThemDMSP">Thêm danh mục sản phẩm</a></li>
+                            <li><a href="./ChinhSuaDM.aspx">Chỉnh sửa danh mục</a></li>
+                            <li><a href="./XemDMDaXN">Xem danh mục đã xác nhận</a></li>
+                            <li><a href="./XemDMDaHuy.aspx">Xem danh mục đã hủy</a></li>
                         </ul>
-        
-        
                         <li data-toggle="collapse" data-target="#service" class="collapsed">
                           <a href="#"><i class="fa fa-user fa-lg"></i> Quản lý tài khoản <span class="arrow"></span></a>
                         </li>  
                         <ul class="sub-menu collapse" id="service">
-                            <li><a href="#">Xem người dùng KH</a></li>
-                            <li><a href="#">Xem người dùng nhà cung cấp</a></li>
-                            <li><a href="#">Thêm người dùng</a></li>
-                            <li><a href="#">Khóa người dùng</a></li>
-                            <li><a href="#">Chỉnh sửa thông tin người dùng</a></li>
-                            <li><a href="#">Xóa người dùng</a></li>
+                            <li><a href="./XemTKKH.aspx">Xem người dùng KH</a></li>
+                            <li><a href="./XemTKNhaCungCap.aspx">Xem người dùng nhà cung cấp</a></li>
+                            <li><a href="./ThemTKNhaCungCap.aspx">Thêm tài khoản nhà cung cấp</a></li>
+                            <li><a href="./XemtkBiKhoa.aspx">Xem tài khoản bị khóa</a></li>
                         </ul>
                         <li data-toggle="collapse" data-target="#new" class="collapsed">
                           <a href="#"><i class="fa fa-car fa-lg"></i> Thống kê <span class="arrow"></span></a>
@@ -92,10 +90,14 @@
         </div>
         <div>
             <!-- masterpage trong nay -->
+           
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
+ 
+         
         </div>
     </div>
+         </form>
      <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

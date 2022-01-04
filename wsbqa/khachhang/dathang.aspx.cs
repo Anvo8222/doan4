@@ -74,7 +74,7 @@ namespace wsbqa.khachhang
             //đặt hàng   (chưa xong)
             int num = RandomNumber(1, 100000);
             string sql_donhang = "SET IDENTITY_INSERT DONHANG ON; INSERT INTO DONHANG (IDDONHANG, NGAYLAP, DIACHIKH,TRANGTHAI,SDT,HOTEN,IDUSER) values ("
-                + num + ", '" + ngaydathang + "', '" + diachi + "'," + 1 + ",'" + sodienthoai + "','" + hoten + "','" + iduser + "'); SET IDENTITY_INSERT DONHANG OFF;";
+                + num + ", '" + ngaydathang + "', N'" + diachi + "',N'chờ xác nhận','" + sodienthoai + "',N'" + hoten + "','" + iduser + "'); SET IDENTITY_INSERT DONHANG OFF;";
             kq = kn.xuly(sql_donhang);
             bool isSuccess = true;
             foreach (DataRow dtr in cart.Rows)
@@ -95,7 +95,7 @@ namespace wsbqa.khachhang
             {
                 Response.Write("<script>alert('ĐẶT HÀNG THÀNH CÔNG');</script>");
                 Session["cart"] = null;
-                Response.Redirect("index.aspx");
+                Server.Transfer("./cart.aspx");
             }
         }
     }

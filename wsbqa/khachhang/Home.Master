@@ -48,7 +48,7 @@
         <div class="header__right">
           <div class="header__right-list">
               <asp:PlaceHolder ID="PHDHoSoCaNhan" runat="server" Visible="false">
-                   <a href="#" class="header__right-link">
+                   <a href="../KhachHang_login/TrangCaNhan.aspx" class="header__right-link">
                        <i class="fas fa-user-alt header__left-icon"></i>
                    </a>
                </asp:PlaceHolder>

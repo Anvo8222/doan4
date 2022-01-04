@@ -14,7 +14,7 @@
 <body>
     <form id="form1" runat="server">
         <nav style="margin: 0;" class="navbar navbar-expand-lg navbar-light  bg-secondary">
-        <a class="navbar-brand text-white" href="#">HOME</a>
+        <a class="navbar-brand text-white" href="../Khachhang/index.aspx">HOME</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -46,13 +46,13 @@
                         <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Quản lý sản phẩm</a>
                         <ul class="collapse list-unstyled" id="homeSubmenu">
                             <li>
-                                <a href="#">Xem sản phẩm</a>
+                                <a href="./XemSP.aspx">Xem sản phẩm</a>
                             </li>
                             <li>
-                                <a href="#">Thêm sản phẩm</a>
+                                <a href="./ThemSanPham.aspx">Thêm sản phẩm</a>
                             </li>
                             <li>
-                                <a href="#">Chỉnh sửa, xóa sản phẩm</a>
+                                <a href="./QuanLySanPham.aspx">Chỉnh sửa, xóa sản phẩm</a>
                             </li>
                         </ul>
                     </li>
@@ -60,10 +60,10 @@
                         <a href="#QLTK" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Quản lý đơn hàng</a>
                         <ul class="collapse list-unstyled" id="QLTK">
                             <li>
-                                <a href="#">Xem đơn hàng đang giao</a>
+                                <a href="./XemDonHangChoXN.aspx">Xem đơn hàng mới</a>
                             </li>
                             <li>
-                                <a href="#">Xem đơn hàng mới</a>
+                                <a href="#">Xem đơn hàng đang giao</a>
                             </li>
                             <li>
                                 <a href="#">Xem đơn hàng đã giao</a>
@@ -94,13 +94,13 @@
                         <a href="#profile" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Thông tin cá nhân</a>
                         <ul class="collapse list-unstyled" id="profile">
                             <li>
-                                <a href="#">Đổi mật khẩu</a>
+                                <a href="./DoiMatKhauNCC.aspx">Đổi mật khẩu</a>
                             </li>
                             <li>
-                                <a href="#">Xem thông tin cá nhân</a>
+                                <a href="./XemTTCaNhanNCC.aspx">Xem thông tin cá nhân</a>
                             </li>
                             <li>
-                                <a href="#">Sửa thông tin cá nhân</a>
+                                <a href="./ChinhSuaTTCaNhanNCC.aspx">Sửa thông tin cá nhân</a>
                             </li>
                         </ul>
                     </li>
@@ -122,19 +122,13 @@
                         <a href="#danhmuc" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Thêm danh mục</a>
                         <ul class="collapse list-unstyled" id="danhmuc">
                             <li>
-                                <a href="#">Gửi yêu cầu thêm danh mục</a>
+                                <a href="./YeuCauThemDM.aspx">Yêu cầu thêm danh mục</a>
                             </li>
                             <li>
-                                <a href="#">Xem danh mục yêu cầu</a>
+                                <a href="./DanhMucDuocXN.aspx">Xem danh mục được xác nhận</a>
                             </li>
                             <li>
-                                <a href="#">Thêm danh mục yêu cầu</a>
-                            </li>
-                            <li>
-                                <a href="#">Xóa danh mục yêu cầu</a>
-                            </li>
-                            <li>
-                                <a href="#">Sửa danh mục yêu cầu</a>
+                                <a href="./DanhMucBiHuy.aspx">Xem danh mục bị hủy</a>
                             </li>
                         </ul>
                     </li>

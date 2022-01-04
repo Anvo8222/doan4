@@ -37,7 +37,7 @@ namespace wsbqa.khachhang
             string email = Session["email"].ToString();
             //mã hóa mật khẩu trước khi thêm vào database
             string pass = wsbqa.MD5.ToMD5(matkhau);
-            int kq = kn.xuly("insert into TAIKHOAN(EMAIL,MATKHAU,IDPHANQUYEN) values ('" + email + "' , '" + pass + "', 2)");
+            int kq = kn.xuly("insert into TAIKHOAN(EMAIL,MATKHAU,TRANGTHAI,IDPHANQUYEN) values ('" + email + "' , '" + pass + "',N'đã kích hoạt', 2)");
 
             if (kq > 0) // neu cap nhat duoc thi hien thi khong bao
             {

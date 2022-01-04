@@ -26,8 +26,8 @@ namespace wsbqa.khachhang
             string matkhau = txtPassword1.Text;
             string pass = wsbqa.MD5.ToMD5(matkhau);
             string sql1 = "select * from TAIKHOAN where EMAIL = '" + tendangnhap + "' and MATKHAU = '" + matkhau + "' and IDPHANQUYEN=1";
-            string sql2 = "select * from TAIKHOAN where EMAIL = '" + tendangnhap + "' and MATKHAU = '" + pass + "' and IDPHANQUYEN=2";
-            string sql3 = "select * from TAIKHOAN where EMAIL = '" + tendangnhap + "' and MATKHAU = '" + pass + "' and IDPHANQUYEN=3";
+            string sql2 = "select * from TAIKHOAN where EMAIL = '" + tendangnhap + "' and MATKHAU = '" + pass + "' and IDPHANQUYEN=2 and TRANGTHAI=N'đã kích hoạt'";
+            string sql3 = "select * from TAIKHOAN where EMAIL = '" + tendangnhap + "' and MATKHAU = '" + pass + "' and IDPHANQUYEN=3 and TRANGTHAI=N'đã kích hoạt'";
             //bảng admin
             DataTable table1 = new DataTable();
             //KHÁCH HÀNG

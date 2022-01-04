@@ -1,0 +1,54 @@
+﻿.FormThemMoi {
+    padding: 15px
+}
+
+.thongTin {
+    overflow: hidden;
+    padding-bottom: 10px
+}
+
+.tenTruong {
+    float: left;
+    width: 150px
+}
+
+.oNhap {
+    float: left;
+    width: calc(100% - 150px)
+}
+
+.FormThemMoi input[type=text],
+.FormThemMoi input[type=password],
+.FormThemMoi select,
+.FormThemMoi textarea {
+    border: solid 1px #dfdfdf;
+    width: 50%;
+    padding: 5px
+}
+
+.FormThemMoi .btThemMoi,
+.FormThemMoi .btHuy {
+    border: 0;
+    background: #333;
+    cursor: pointer;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: bold
+}
+
+.FormThemMoi .btHuy {
+    background: #bbb;
+    margin-left: 10px
+}
+
+.FormThemMoi .thongBaoTaoThanhCong {
+    font-size: 16px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-weight: bold
+}
+
+.FormThemMoi .anhDaiDien {
+    max-width: 200px;
+    max-height: 120px;
+}

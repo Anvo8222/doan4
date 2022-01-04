@@ -40,92 +40,36 @@
         <ul class="list-unstyled components">
           <p>Dummy Heading</p>
           <li>
-            <a class="header__right-link-sidebar" href="#">Trang chủ</a>
+            <a class="header__right-link-sidebar" href="../khachhang/index.aspx">Trang chủ</a>
           </li>
           <li class="active">
-            <a class="header__right-link-sidebar" href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"
+            <a class="header__right-link-sidebar"  href="./LichSuMuaHang.aspx" data-toggle="collapse" aria-expanded="false"
               class="dropdown-toggle">Quản lý đơn hàng <i class="fas fa-chevron-down"></i></a>
+          </li>
+          <li>
+            <a class="header__right-link-sidebar" href="./XemDonBiHuy.aspx" data-toggle="collapse" aria-expanded="false"
+              class="dropdown-toggle">Xem Đơn hàng bị hủy<i class="fas fa-chevron-down"></i></a>
+            
+          </li>
+            <li>
+            <a class="header__right-link-sidebar" href="./XemDonHangDaGiao.aspx" data-toggle="collapse" aria-expanded="false"
+              class="dropdown-toggle">Xem đơn hàng đã giao<i class="fas fa-chevron-down"></i></a>
+           
+          </li>
+          <li>
+            <a class="header__right-link-sidebar" href="./XemDonHangDangGiao.aspx" data-toggle="collapse" aria-expanded="false"
+              class="dropdown-toggle">Xem đơn hàng đang giao<i class="fas fa-chevron-down"></i></a>
+           
+          </li>
+         
+          <li>
+            <a class="header__right-link-sidebar" href="./QuanLyTTCaNhan.aspx" data-toggle="collapse" aria-expanded="false"
+              class="dropdown-toggle">Quản lý thông tin cá nhân</a>
 
-            <ul class="collapse list-unstyled" id="homeSubmenu">
-              <li>
-                <a class="header__right-link-sidebar" href="#">Quần Tây</a>
-              </li>
-              <li>
-                <a class="header__right-link-sidebar" href="#">Quần Jean</a>
-              </li>
-              <li>
-                <a class="header__right-link-sidebar" href="#">Quần Short</a>
-              </li>
-            </ul>
           </li>
-          <li>
-            <a class="header__right-link-sidebar" href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"
-              class="dropdown-toggle">Áo Nam<i class="fas fa-chevron-down"></i></a>
-            <ul class="collapse list-unstyled" id="pageSubmenu">
-              <li>
-                <a class="header__right-link-sidebar" href="#">Áo Khoác Nam</a>
-              </li>
-              <li>
-                <a class="header__right-link-sidebar" href="#">Áo Sơ Mi Nam</a>
-              </li>
-              <li>
-                <a class="header__right-link-sidebar" href="#">Áo Hoodie Nam</a>
-              </li>
-              <li>
-                <a class="header__right-link-sidebar" href="#">Áo Thun Nam</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a class="header__right-link-sidebar" href="#quannu" data-toggle="collapse" aria-expanded="false"
-              class="dropdown-toggle">Quần Nữ<i class="fas fa-chevron-down"></i></a>
-            <ul class="collapse list-unstyled" id="quannu">
-              <li>
-                <a class="header__right-link-sidebar" href="#">Quần Tây</a>
-              </li>
-              <li>
-                <a class="header__right-link-sidebar" href="#">Quần Jean</a>
-              </li>
-              <li>
-                <a class="header__right-link-sidebar" href="#">Quần Short</a>
-              </li>
-
-            </ul>
-          </li>
-          <li>
-            <a class="header__right-link-sidebar" href="#aonu" data-toggle="collapse" aria-expanded="false"
-              class="dropdown-toggle">Áo Nữ<i class="fas fa-chevron-down"></i></a>
-            <ul class="collapse list-unstyled" id="aonu">
-              <li>
-                <a class="header__right-link-sidebar" href="#">Áo Khoác Nữ</a>
-              </li>
-              <li>
-                <a class="header__right-link-sidebar" href="#">Áo Sơ Mi Nữ</a>
-              </li>
-              <li>
-                <a class="header__right-link-sidebar" href="#">Áo Hoodie Nữ</a>
-              </li>
-              <li>
-                <a class="header__right-link-sidebar" href="#">Áo Thun Nữ</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a class="header__right-link-sidebar" href="#vaydam" data-toggle="collapse" aria-expanded="false"
-              class="dropdown-toggle">Váy đầm<i class="fas fa-chevron-down"></i></a>
-            <ul class="collapse list-unstyled" id="vaydam">
-              <li>
-                <a class="header__right-link-sidebar" href="#">Váy Ngắn</a>
-              </li>
-              <li>
-                <a class="header__right-link-sidebar" href="#">Váy Đầm</a>
-              </li>
-
-            </ul>
-          </li>
-          <li>
-            <a class="header__right-link-sidebar" data-toggle="collapse" aria-expanded="false"
-              class="dropdown-toggle">Khác</a>
+            <li>
+            <a class="header__right-link-sidebar" href="#" data-toggle="collapse" aria-expanded="false"
+              class="dropdown-toggle">Đổi mật khẩu</a>
 
           </li>
           <li>
