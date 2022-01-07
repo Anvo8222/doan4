@@ -173,7 +173,9 @@
     <Content Include="nhacungcap\DoiMatKhauNCC.aspx" />
     <Content Include="nhacungcap\QuanLySanPham.aspx" />
     <Content Include="nhacungcap\ThemSanPham.aspx" />
+    <Content Include="nhacungcap\TrangThaiDH.aspx" />
     <Content Include="nhacungcap\XacNhanDonHang.aspx" />
+    <Content Include="nhacungcap\XemDonDaXN.aspx" />
     <Content Include="nhacungcap\XemDonHangChoXN.aspx" />
     <Content Include="nhacungcap\XemDonHangMoi.aspx" />
     <Content Include="nhacungcap\XemTTCaNhanNCC.aspx" />
@@ -535,12 +537,26 @@
     <Compile Include="nhacungcap\ThemSanPham.aspx.designer.cs">
       <DependentUpon>ThemSanPham.aspx</DependentUpon>
     </Compile>
+    <Compile Include="nhacungcap\TrangThaiDH.aspx.cs">
+      <DependentUpon>TrangThaiDH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nhacungcap\TrangThaiDH.aspx.designer.cs">
+      <DependentUpon>TrangThaiDH.aspx</DependentUpon>
+    </Compile>
     <Compile Include="nhacungcap\XacNhanDonHang.aspx.cs">
       <DependentUpon>XacNhanDonHang.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="nhacungcap\XacNhanDonHang.aspx.designer.cs">
       <DependentUpon>XacNhanDonHang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="nhacungcap\XemDonDaXN.aspx.cs">
+      <DependentUpon>XemDonDaXN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nhacungcap\XemDonDaXN.aspx.designer.cs">
+      <DependentUpon>XemDonDaXN.aspx</DependentUpon>
     </Compile>
     <Compile Include="nhacungcap\XemDonHangChoXN.aspx.cs">
       <DependentUpon>XemDonHangChoXN.aspx</DependentUpon>
